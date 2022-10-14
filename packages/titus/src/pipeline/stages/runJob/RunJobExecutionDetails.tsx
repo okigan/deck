@@ -144,14 +144,14 @@ export class RunJobExecutionDetails extends React.Component<
                 <br />
                 <a
                   target="_blank"
-                  href={`${titusUiEndpoint}jobs/${jobId}/tasks/${taskId}/logs/archived?file=stdout&view=Finished&open=true`}
+                  href={`${titusUiEndpoint}api/logs/${jobId}/${taskId}?filename=stdout`}
                 >
                   Stdout
                 </a>
                 <br />
                 <a
                   target="_blank"
-                  href={`${titusUiEndpoint}jobs/${jobId}/tasks/${taskId}/logs/archived?file=stderr&view=Finished&open=true`}
+                  href={`${titusUiEndpoint}api/logs/${jobId}/${taskId}?filename=stderr`}
                 >
                   Stderr
                 </a>
